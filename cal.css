@@ -13,6 +13,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #000609;
+    overflow: hidden;
 
 }
 
@@ -29,7 +30,11 @@ body {
     backdrop-filter: blur(50px);
     filter: blur(4px);
     z-index: -1;
-
+    
+}
+.circle-two{
+  display: none;
+    
 }
 
 .input {
@@ -50,7 +55,12 @@ body {
     color: rgba(255, 255, 255, 0.743);
     text-align: end;
 }
-
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
 .main {
     height: 90vh;
     width: 350px;
@@ -73,6 +83,7 @@ body {
     height: 50px;
     width: 50px;
     top: 50px;
+    z-index: 10;
 }
 .overlay img{
     height: 100%;
@@ -101,6 +112,7 @@ body {
 }
 .body{
     background-color: rgb(113, 191, 246);
+    overflow: hidden;
 }
 .main-two {
     height: 90vh;
@@ -114,4 +126,106 @@ body {
     flex-direction: column;
     justify-content: end;
     backdrop-filter: blur(50px);
+}
+@media (max-width:450px){
+    .kuch-bhi{
+        overflow: hidden;
+        position: relative;
+    }
+    .circle-two {
+        position: absolute;
+        display: flex;
+        /* display: block; */
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        /* background-image: linear-gradient(rgb(0, 191, 255), rgb(4, 251, 255)); */
+        background-color: rgba(149, 0, 255, 0.502);
+        box-shadow: 5px 5px 50px rgba(149, 0, 255, 0.502);
+        /* top: -1px; */
+        left: 210px
+        ;
+        bottom: 0px;
+        backdrop-filter: blur(50px);
+        filter: blur(4px);
+        z-index: -1;
+    }
+    .overflow{
+        overflow: hidden;
+        position:absolute;
+        height: 100%;
+        width: 100%
+        
+    }
+}
+@media (min-width:767px) and (max-width:1025px){
+    .circle {
+        height: 700px;
+        width: 700px;
+        border-radius: 50%;
+        /* background-image: linear-gradient(rgb(0, 191, 255), rgb(4, 251, 255)); */
+        background-color: rgb(0, 119, 255);
+        box-shadow: 5px 5px 50px rgb(0, 119, 255);
+        position: absolute;
+        top: -191px;
+        right: 406px;
+        backdrop-filter: blur(50px);
+        filter: blur(4px);
+        z-index: -1;
+    }
+
+/* .circle-two {
+    display: none;
+} */
+    .main {
+        height: 50vh;
+        width: 550px;
+        border-radius: 25px;
+        border: 1px solid rgba(155, 197, 230, 0.376);
+        background-color: rgba(255, 255, 255, 0.149);
+        box-shadow: 5px 5px 82px #00000036;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        backdrop-filter: blur(50px);
+    }
+    .main-two {
+        height: 50vh;
+        width: 550px;
+        border-radius: 25px;
+        border: 1px solid rgba(155, 197, 230, 0.376);
+        background-color: rgba(6, 6, 6, 0.149);
+        box-shadow: 5px 5px 82px #ffffff36;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        backdrop-filter: blur(50px);
+    }
+    .circle-two {
+        position: absolute;
+        display: flex;
+        /* display: block; */
+        height: 700px;
+        width: 700px;
+        border-radius: 50%;
+        /* background-image: linear-gradient(rgb(0, 191, 255), rgb(4, 251, 255)); */
+        background-color: rgba(149, 0, 255, 0.502);
+        box-shadow: 5px 5px 100px rgba(149, 0, 255, 0.502);
+        /* top: -1px; */
+        left: 328px;
+        bottom: -227px;
+        backdrop-filter: blur(50px);
+        filter: blur(4px);
+        z-index: -1;
+    }
+
+    .overflow{
+        overflow: hidden;
+        position:absolute;
+        height: 100%;
+        width: 100%
+        
+    }
 }
